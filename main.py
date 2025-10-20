@@ -20,7 +20,7 @@ def prepare_data():
     try:
         # Load data from CSV file using datasets library
         # The file path needs to be a dictionary with a key that represents the split name
-        dataset = load_dataset("csv", data_files={"train": DATA_PATH})
+        dataset = load_dataset("csv", data_files={"train": DATA_PATH}, delimiter=';')
 
         # Extract unique labels
         labels = ["database", "networking", "machine-learning"]
