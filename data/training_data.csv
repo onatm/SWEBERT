@@ -257,3 +257,352 @@ text;label
 "A common table expression (CTE) is a temporary named result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement.";database
 "A window function performs a calculation across a set of table rows that are somehow related to the current row.";database
 "A subquery is a query nested inside another query.";database
+The SQL query optimization reduced execution time from 45 seconds to 3 seconds;database
+Neural network achieved 96.5% accuracy on the validation dataset;machine-learning
+TCP handshake failed due to firewall configuration blocking port 443;networking
+Database index on customer_id column improved search performance significantly;database
+Convolutional neural network trained on 50000 images for object detection;machine-learning
+Network latency increased to 250ms during peak traffic hours;networking
+PostgreSQL vacuum process running to reclaim storage space;database
+Random forest classifier outperformed logistic regression by 12%;machine-learning
+Switch configuration updated to enable VLAN trunking on port 24;networking
+MySQL replication lag detected between master and slave servers;database,networking
+Deep learning model requires GPU acceleration for training efficiency;machine-learning
+Subnet mask 255.255.255.0 allows 254 usable host addresses;networking
+NoSQL database chosen for horizontal scalability requirements;database
+Gradient descent optimization converged after 500 iterations;machine-learning
+DNS resolution failing for internal domain names;networking
+Database backup completed successfully with 2.3 TB transferred;database
+Overfitting detected in model with training accuracy 99% but validation 75%;machine-learning
+BGP routing protocol exchanging 50000 routes with upstream provider;networking
+MongoDB sharding implemented across 12 nodes for load distribution;database
+Feature engineering improved model F1 score from 0.72 to 0.89;machine-learning
+Packet loss of 3.2% observed on WAN connection to remote office;networking
+ACID properties ensure transaction consistency in relational databases;database
+Hyperparameter tuning using grid search found optimal learning rate;machine-learning
+Load balancer distributing traffic across 8 application servers;networking
+Database connection pool exhausted causing application timeouts;database,networking
+Transfer learning using pretrained ResNet model reduces training time;machine-learning
+Network segmentation isolates production from development environments;networking
+Redis cache hit ratio maintained at 94% for session storage;database
+Recurrent neural network processes sequential time series data;machine-learning
+IPsec VPN tunnel established with 256-bit AES encryption;networking,database
+Indexing strategy created composite index on three columns;database
+Confusion matrix shows 85% precision and 92% recall for classifier;machine-learning
+Network throughput limited to 940 Mbps on gigabit interface;networking
+Database normalization to third normal form eliminates redundancy;database
+Batch normalization layer stabilizes deep neural network training;machine-learning
+OSPF protocol calculating shortest path using Dijkstra algorithm;networking
+PostgreSQL query planner chose sequential scan over index scan;database
+Support vector machine with RBF kernel separates non-linear data;machine-learning
+Spanning tree protocol preventing network loops on layer 2;networking
+Database partitioning by date range improves query performance;database
+Dropout regularization prevents overfitting in neural networks;machine-learning
+DHCP server assigning IP addresses from pool 192.168.1.100 to 200;networking
+SQL injection vulnerability patched in user input validation;database
+K-means clustering algorithm grouped customers into 5 segments;machine-learning
+Quality of service policy prioritizing VoIP traffic over HTTP;networking
+Database transaction rolled back due to constraint violation;database
+Ensemble methods combining multiple models improve prediction accuracy;machine-learning
+Network intrusion detection system flagged suspicious SSH attempts;networking
+MySQL slow query log identified bottleneck in JOIN operation;database
+Principal component analysis reduced feature dimensions from 50 to 10;machine-learning
+NAT translation mapping private addresses to public IP;networking
+Database deadlock detected between two concurrent transactions;database
+LSTM network processing natural language for sentiment analysis;machine-learning
+MPLS network providing traffic engineering across backbone;networking
+Cassandra cluster replication factor set to 3 for fault tolerance;database,networking
+Cross-validation using 5 folds to evaluate model performance;machine-learning
+ARP table mapping IP addresses to MAC addresses on local network;networking
+Database migration from Oracle to PostgreSQL completed successfully;database
+Reinforcement learning agent maximizing reward in game environment;machine-learning
+Software-defined networking controller managing data plane flows;networking
+B-tree index structure enabling logarithmic search complexity;database
+Bias-variance tradeoff balanced to minimize total error;machine-learning
+Border gateway protocol filtering routes based on AS path;networking
+Stored procedure execution plan cached for repeated calls;database
+Convolutional filters detecting edges and patterns in images;machine-learning
+Network packet capture analyzing HTTP traffic using Wireshark;networking
+Database trigger automatically updating audit log on modifications;database
+Activation function ReLU introducing non-linearity in neural network;machine-learning
+Virtual LAN segregating broadcast domains on switch;networking
+Database view providing abstraction layer over complex queries;database
+Backpropagation algorithm computing gradients for weight updates;machine-learning
+Link aggregation combining four interfaces for 4 Gbps bandwidth;networking
+Foreign key constraint maintaining referential integrity between tables;database,networking
+Decision tree visualization showing feature importance rankings;machine-learning
+Network time protocol synchronizing server clocks to within 10ms;networking
+Database connection string encrypted for security compliance;database
+Attention mechanism focusing on relevant input sequence positions;machine-learning
+Static routing configuration for deterministic path selection;networking
+Database materialized view refreshed hourly for reporting queries;database
+XGBoost gradient boosting algorithm winning Kaggle competition;machine-learning
+Network address translation overload using single public IP;networking
+Database schema evolution managed with migration scripts;database
+Unsupervised learning discovering hidden patterns in unlabeled data;machine-learning
+Quality of service marking DSCP values for traffic classification;networking
+Full-text search index created for efficient text searching;database
+Neural architecture search automating model design process;machine-learning
+Ethernet frame with 1500 byte MTU for data transmission;networking
+Database query execution plan showing table scan operations;database
+Batch processing training data in mini-batches of 32 samples;machine-learning
+Network monitoring showing 99.95% uptime over 30 days;networking
+Database cursor iterating through result set row by row;database
+Data augmentation techniques expanding training dataset size;machine-learning
+Firewall rules blocking incoming traffic on unused ports;networking
+Database collation determining string comparison and sorting;database
+Model interpretability using SHAP values for feature explanations;machine-learning
+Network redundancy with dual uplinks preventing single point failure;networking
+Database checkpoint process writing dirty pages to disk;database
+Learning rate scheduler reducing step size during training;machine-learning
+Multicast routing distributing video stream to multiple receivers;networking
+Database snapshot isolation level preventing dirty reads;database
+Neural network weight initialization using Xavier method;machine-learning
+Network bandwidth throttling limiting user connection to 10 Mbps;networking
+Database stored function returning calculated values;database
+Random search hyperparameter optimization exploring parameter space;machine-learning
+VLAN tagging 802.1Q adding 4 bytes to ethernet frame;networking
+Database lock escalation converting row locks to table lock;database
+Softmax function converting logits to probability distribution;machine-learning
+Network latency testing showing 15ms round trip time;networking
+Database CDC capturing data changes for replication;database
+ROC curve analysis evaluating binary classifier performance;machine-learning
+Switch port security limiting MAC addresses per interface;networking
+Database query hint forcing specific execution plan;database
+Word embeddings representing words in continuous vector space;machine-learning
+Network jitter measured at 8ms affecting real-time applications;networking
+Database archiving moving historical data to separate storage;database
+Online learning updating model with streaming data continuously;machine-learning
+Access control list filtering traffic based on source IP;networking
+Database prepared statement preventing SQL injection attacks;database
+Multi-task learning sharing representations across related tasks;machine-learning
+Network hop count showing 12 routers to destination;networking
+Database columnar storage optimizing analytical query performance;database
+Active learning selecting most informative samples for labeling;machine-learning
+Virtual private network encrypting traffic over public internet;networking
+Database write-ahead logging ensuring durability of transactions;database
+Generative adversarial network creating synthetic training images;machine-learning
+Network route redistribution between OSPF and BGP protocols;networking
+Database read replica offloading read traffic from primary server;database,networking
+Federated learning training model across distributed devices;machine-learning
+Port forwarding directing external traffic to internal server;networking
+Database connection pooling reusing connections for efficiency;database
+Meta-learning enabling models to learn from few examples;machine-learning
+Network packet fragmentation splitting large datagrams into pieces;networking
+Database transaction log shipping for disaster recovery;database
+Autoencoder learning compressed representation of input data;machine-learning
+Network load balancing using round-robin algorithm;networking
+Database cascade delete removing dependent rows automatically;database
+Object detection model identifying bounding boxes around objects;machine-learning
+Network congestion control adjusting transmission rate dynamically;networking
+Database EXPLAIN command analyzing query performance;database
+Text classification using TF-IDF features and naive Bayes;machine-learning
+Network proxy server caching frequently accessed web content;networking
+Database upsert operation inserting or updating based on existence;database
+Semantic segmentation labeling each pixel in image;machine-learning
+Network route flapping causing instability in routing table;networking
+Database covering index including all query columns;database
+Transformer architecture using self-attention for language modeling;machine-learning
+Network bandwidth shaping prioritizing critical applications;networking
+Database bulk insert loading millions of records efficiently;database
+Time series forecasting predicting future values from history;machine-learning
+Network asymmetric routing causing packet path inconsistency;networking
+Database foreign data wrapper accessing external data sources;database
+Multi-class classification distinguishing between 10 categories;machine-learning
+Network policy-based routing selecting path based on criteria;networking
+Database window function performing calculation across row set;database
+Graph neural network learning from network structure data;machine-learning
+Network MAC flooding attack overwhelming switch CAM table;networking
+Database table partitioning dividing large table into segments;database
+Anomaly detection identifying outliers in network traffic;machine-learning
+Network jumbo frames using 9000 byte MTU for performance;networking
+Database row-level security enforcing access control policies;database
+Siamese network learning similarity between input pairs;machine-learning
+Network protocol analyzer decoding packet headers and payloads;networking
+Database bitmap index efficient for low cardinality columns;database
+Knowledge distillation compressing large model into smaller one;machine-learning
+Network failover switching to backup path within seconds;networking
+Database log file growing requiring maintenance intervention;database
+Neural style transfer applying artistic style to images;machine-learning
+Network latency optimization reducing response time to 50ms;networking
+Database referential integrity constraint preventing orphaned records;database
+Collaborative filtering recommending items based on user similarity;machine-learning
+Network microburst causing brief congestion and packet drops;networking
+Database in-memory table accelerating query response time;database
+Attention-based model focusing on relevant context information;machine-learning
+Network route summarization aggregating multiple prefixes;networking
+Database sequence generating unique identifiers automatically;database
+Adversarial training improving model robustness to attacks;machine-learning
+Network link state advertisement flooding routing updates;networking
+Database temporary table storing intermediate results;database
+Self-supervised learning creating labels from unlabeled data;machine-learning
+Network equal-cost multipath spreading traffic across paths;networking
+Database synchronous replication ensuring zero data loss;database,networking
+Multi-modal learning combining image and text inputs;machine-learning
+Network ingress filtering blocking spoofed source addresses;networking
+Database hash join algorithm matching rows efficiently;database
+Few-shot learning generalizing from minimal training examples;machine-learning
+Network tunneling encapsulating packets for transmission;networking
+Database filtered index reducing storage and maintenance;database
+Explainable AI providing interpretable predictions to users;machine-learning
+Network peering agreement exchanging traffic without payment;networking
+Database constraint deferrable checking at transaction end;database
+Zero-shot learning classifying unseen categories;machine-learning
+Network administrative distance determining route preference;networking
+Database denormalization improving read performance;database
+Continual learning adapting to new data without forgetting;machine-learning
+Network traffic shaping smoothing burst transmission;networking
+Database deadlock prevention using timeout mechanism;database
+Causal inference estimating treatment effects from data;machine-learning
+Network path MTU discovery avoiding fragmentation;networking
+Database clustered index determining physical row order;database
+Model compression reducing parameters for edge deployment;machine-learning
+Network route reflector simplifying BGP topology;networking
+Database asynchronous replication accepting some data lag;database,networking
+Curriculum learning training on increasingly difficult examples;machine-learning
+Database table lock preventing concurrent modifications during maintenance;database
+Variational autoencoder generating new samples from latent space;machine-learning
+Network split horizon preventing routing loops in distance vector;networking
+Oracle database RAC clustering provides high availability failover;database,networking
+Beam search decoding finding optimal sequence in language models;machine-learning
+ICMP echo request packets testing network connectivity to host;networking
+Database materialized query table caching aggregated results;database
+Policy gradient method optimizing actions in reinforcement learning;machine-learning
+Network packet scheduler managing queue discipline for traffic;networking
+PostgreSQL MVCC allowing concurrent transactions without locking;database
+Capsule network preserving spatial relationships in hierarchical features;machine-learning
+SNMP monitoring collecting performance metrics from network devices;networking
+Database hash partitioning distributing rows across shards evenly;database
+Bidirectional LSTM processing sequences in forward and backward directions;machine-learning
+Network convergence time measuring routing protocol stability;networking
+SQL Server Always On availability group synchronizing databases;database,networking
+Actor-critic algorithm combining value and policy based methods;machine-learning
+RADIUS server authenticating network access for wireless clients;networking
+Database statement timeout preventing long-running queries;database
+Gaussian process regression providing uncertainty estimates for predictions;machine-learning
+Network blackhole routing dropping traffic destined for specific prefixes;networking
+MySQL InnoDB buffer pool caching frequently accessed pages;database
+Variational inference approximating posterior distributions in Bayesian models;machine-learning
+Ethernet flow control using PAUSE frames to prevent buffer overflow;networking
+Database transaction savepoint allowing partial rollback;database
+Normalizing flow transforming simple distributions into complex ones;machine-learning
+Network BFD protocol detecting link failures in milliseconds;networking
+Cassandra gossip protocol exchanging cluster state information;database,networking
+Gradient clipping preventing exploding gradients during training;machine-learning
+Network prefix list filtering routes based on address ranges;networking
+Database vacuum freeze preventing transaction ID wraparound;database
+Monte Carlo tree search exploring game states for optimal moves;machine-learning
+Quality of service policing enforcing bandwidth limits on traffic;networking
+Oracle flashback query retrieving historical data states;database
+Bayesian optimization efficiently searching hyperparameter space;machine-learning
+Network route dampening suppressing flapping route announcements;networking
+PostgreSQL foreign server connecting to remote databases;database,networking
+Attention pooling aggregating sequence representations for classification;machine-learning
+MPLS label distribution protocol establishing label-switched paths;networking
+Database constraint validation checking data integrity rules;database
+Proximal policy optimization improving stability in RL training;machine-learning
+Network STP root bridge election determining topology center;networking
+Redis Sentinel monitoring master-slave replication health;database,networking
+Dilated convolutions expanding receptive field without pooling;machine-learning
+BGP confederation reducing mesh requirements in large networks;networking
+Database page compression reducing storage footprint;database
+Triplet loss learning embeddings with distance metric properties;machine-learning
+Network route leaking importing routes between VRF instances;networking
+SQL query parameterization protecting against injection attacks;database
+Batch embedding aggregating embeddings for variable length inputs;machine-learning
+Ethernet auto-negotiation determining speed and duplex settings;networking
+MongoDB aggregation pipeline processing document transformations;database
+Residual connections enabling training of very deep networks;machine-learning
+Network route map modifying route attributes during redistribution;networking
+Database partitioned index aligning with table partitioning scheme;database
+Double DQN reducing overestimation bias in Q-learning;machine-learning
+Port mirroring copying traffic to monitoring interface;networking
+PostgreSQL table inheritance implementing hierarchical schemas;database
+Temporal difference learning updating value estimates from experience;machine-learning
+Network route tag marking routes for filtering policy;networking
+Oracle tablespace management organizing physical storage;database
+Multi-head attention allowing parallel attention computations;machine-learning
+HSRP providing first-hop redundancy for gateway failover;networking
+Database function-based index indexing computed expressions;database
+Experience replay storing transitions for off-policy learning;machine-learning
+Network policer dropping packets exceeding configured rate;networking
+Redis pub-sub messaging enabling real-time notifications;database
+Layer normalization stabilizing training in transformer models;machine-learning
+Cisco EtherChannel bundling links for increased bandwidth;networking
+SQL Server columnstore index optimizing analytical workloads;database
+Mixture of experts routing inputs to specialized sub-networks;machine-learning
+Network route preference using local preference attribute;networking
+PostgreSQL exclusion constraint preventing overlapping ranges;database
+Entropy regularization encouraging exploration in policy gradient;machine-learning
+VRRP protocol providing router redundancy and failover;networking
+Database parallel query execution using multiple workers;database,machine-learning
+Contrastive learning training representations by comparing samples;machine-learning
+Network ECMP hashing distributing flows across equal paths;networking
+MySQL query cache storing identical query results;database
+Neural Turing machine augmenting networks with external memory;machine-learning
+Multiprotocol BGP advertising multiple address families;networking
+Oracle partition pruning skipping irrelevant partitions in queries;database
+Focal loss addressing class imbalance in object detection;machine-learning
+Network GRE tunnel encapsulating protocols over IP;networking
+Database range partitioning dividing data by value ranges;database
+World models learning environment dynamics in model-based RL;machine-learning
+Network MTU path discovery finding maximum transmission unit;networking
+PostgreSQL BRIN index efficiently indexing correlated data;database
+Scheduled sampling mixing teacher forcing with model predictions;machine-learning
+Ethernet link aggregation control protocol negotiating bundles;networking
+Database hash index providing constant time lookups;database
+Hindsight experience replay learning from failed attempts;machine-learning
+Network route export limiting advertised prefixes;networking
+MongoDB replica set election choosing new primary node;database,networking
+Spectral normalization constraining discriminator Lipschitz constant;machine-learning
+TACACS+ protocol providing centralized authentication and authorization;networking
+Database online index rebuild avoiding table locks;database
+Target network stabilizing Q-learning value estimates;machine-learning
+Network unicast reverse path forwarding preventing spoofing;networking
+Redis cluster slots distributing keys across nodes;database,networking
+Group normalization normalizing features across channel groups;machine-learning
+Network conditional route advertisement based on route existence;networking
+SQL Server read committed snapshot isolation reducing blocking;database
+Prioritized experience replay sampling important transitions;machine-learning
+BGP route reflector avoiding full mesh topology;networking
+Database covering query using only index without table access;database
+Dueling architecture separating value and advantage streams;machine-learning
+Network NHRP resolving NBMA next hop addresses;networking
+PostgreSQL partial index indexing subset of rows;database
+Noisy networks adding parametric noise for exploration;machine-learning
+Ethernet storm control limiting broadcast traffic rate;networking
+Oracle RMAN backup compression reducing backup size;database
+Curiosity-driven exploration rewarding novel state visits;machine-learning
+Network PBR policy routing based on source address;networking
+MySQL binlog replication streaming changes to replicas;database,networking
+Squeeze-and-excitation adaptively recalibrating channel features;machine-learning
+DHCP snooping preventing rogue DHCP server attacks;networking
+Database implicit commit automatically committing DDL statements;database
+Trust region methods constraining policy updates for stability;machine-learning
+Network BUM traffic handling broadcast unknown multicast frames;networking
+PostgreSQL unlogged table trading durability for performance;database
+GANs equilibrium balancing generator and discriminator training;machine-learning
+PPPoE protocol establishing point-to-point sessions over ethernet;networking
+Database wait event analysis identifying performance bottlenecks;database
+N-step returns using multi-step bootstrapping in RL;machine-learning
+Network DMVPN simplifying VPN hub-and-spoke topologies;networking
+Redis sorted sets maintaining ordered collections efficiently;database
+Temporal convolutional networks processing sequences with dilated convolutions;machine-learning
+Network flowspec distributing traffic filtering rules via BGP;networking
+Oracle AWR report analyzing database performance statistics;database
+Rainbow DQN combining multiple DQN improvements;machine-learning
+Network LDP targeted session establishing labels to specific peer;networking
+PostgreSQL toast mechanism storing large column values externally;database
+Neural ODEs modeling continuous depth transformations;machine-learning
+Ethernet MAC security limiting learned addresses per port;networking
+Database adaptive query optimization adjusting plans based on cardinality;database
+Soft actor-critic maximizing entropy for robust policies;machine-learning
+Network route refresh capability requesting full routing update;networking
+MySQL performance schema instrumenting server execution;database
+EfficientNet scaling width depth and resolution optimally;machine-learning
+BGP ADD-PATH advertising multiple paths for prefix;networking
+Database block change tracking accelerating incremental backups;database
+Distributional RL learning full return distributions;machine-learning
+Network IS-IS protocol using link-state routing in ISP;networking
+Oracle adaptive cursor sharing handling bind variable skew;database
+Meta-reinforcement learning adapting quickly to new tasks;machine-learning
