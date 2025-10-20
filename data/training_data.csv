@@ -1,0 +1,259 @@
+text,label
+"A SQL query is used to fetch data from a relational database.",database
+"Network latency and bandwidth are key performance metrics.",networking
+"The model was trained using a support vector machine algorithm.",machine-learning
+"We need to optimize the database index for faster read operations.",database
+"Configuring the router's firewall rules is crucial for security.",networking
+"Hyperparameter tuning for the neural network took several hours.",machine-learning
+"Denormalization can improve query performance but increases redundancy.",database
+"The switch operates at Layer 2 of the OSI model.",networking
+"BERT and GPT-3 are examples of large language models.",machine-learning
+"TCP is a connection-oriented protocol, ensuring reliable data transfer.",networking
+"UDP is a connectionless protocol, often used for streaming video and online gaming.",networking
+"The OSI model has 7 layers, each with a specific networking function.",networking
+"IP addresses are used to uniquely identify devices on a network.",networking
+"A router connects different networks together, directing traffic between them.",networking
+"A switch connects devices within the same local area network.",networking
+"DNS resolves human-readable domain names to machine-readable IP addresses.",networking
+"Firewalls are essential for network security, blocking unauthorized access.",networking
+"VPNs create a secure, encrypted connection over a public network.",networking
+"Network congestion occurs when a network is overloaded with data traffic.",networking
+"Load balancers distribute incoming network traffic across multiple servers.",networking
+"The physical layer of the OSI model deals with the hardware of network connections.",networking
+"Ethernet is a common technology for wired local area networks.",networking
+"Wi-Fi uses radio waves to provide wireless network connectivity.",networking
+"Subnetting divides a large IP network into smaller, more manageable sub-networks.",networking
+"The transport layer provides end-to-end communication services for applications.",networking
+"HTTP is the foundation of data communication for the World Wide Web.",networking
+"HTTPS is the secure version of HTTP, encrypting data in transit.",networking
+"FTP is a standard network protocol used for transferring files between computers.",networking
+"SSH provides a secure channel over an unsecured network in a client-server architecture.",networking
+"ICMP is used by network devices to send error messages and operational information.",networking
+"A packet is a small unit of data transmitted over a packet-switched network.",networking
+"Latency is the delay in data communication over a network.",networking
+"Bandwidth is the maximum rate of data transfer across a given path.",networking
+"A proxy server acts as an intermediary for requests from clients seeking resources from other servers.",networking
+"Network Address Translation (NAT) maps private IP addresses to a single public IP address.",networking
+"The data link layer is responsible for node-to-node data transfer.",networking
+"A MAC address is a unique identifier assigned to a network interface controller (NIC).",networking
+"ARP resolves an IP address to a physical MAC address on a local network.",networking
+"BGP is a standardized exterior gateway protocol designed to exchange routing and reachability information among autonomous systems.",networking
+"OSPF is an interior gateway protocol used to distribute IP routing information throughout a single autonomous system.",networking
+"A LAN is a local area network, confined to a small area like an office building.",networking
+"A WAN is a wide area network, spanning a large geographical area.",networking
+"A MAN is a metropolitan area network, larger than a LAN but smaller than a WAN.",networking
+"QoS (Quality of Service) is used to manage network resources and prioritize traffic.",networking
+"VoIP (Voice over IP) allows for making voice calls using an internet connection instead of a regular phone line.",networking
+"A network hub is a simple device that connects multiple Ethernet devices, making them act as a single network segment.",networking
+"A network bridge connects two different LANs, allowing them to function as a single LAN.",networking
+"A gateway is a network node that connects two networks with different transmission protocols together.",networking
+"The session layer of the OSI model manages sessions between end-user application processes.",networking
+"The presentation layer formats and encrypts data to be sent across a network, providing freedom from compatibility problems.",networking
+"The application layer is where network applications and their protocols, such as HTTP and FTP, operate.",networking
+"A denial-of-service (DoS) attack is a cyber-attack in which the perpetrator seeks to make a machine or network resource unavailable.",networking
+"A distributed denial-of-service (DDoS) attack is a DoS attack using multiple compromised computer systems as sources of attack traffic.",networking
+"An intrusion detection system (IDS) is a device or software application that monitors a network for malicious activity or policy violations.",networking
+"An intrusion prevention system (IPS) is a network security/threat prevention technology that examines network traffic flows to detect and prevent vulnerability exploits.",networking
+"A honeypot is a security mechanism intended to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems.",networking
+"Port forwarding allows remote computers to connect to a specific computer or service within a private local-area network.",networking
+"A bastion host is a special-purpose computer on a network specifically designed and configured to withstand attacks.",networking
+"Network segmentation is the practice of splitting a computer network into sub-networks, each being a network segment.",networking
+"Packet sniffing is the act of capturing data packets flowing across a computer network.",networking
+"A VLAN (Virtual LAN) is any broadcast domain that is partitioned and isolated in a computer network at the data link layer.",networking
+"MPLS (Multi-Protocol Label Switching) is a routing technique in telecommunications networks that directs data from one node to the next based on short path labels.",networking
+"A network topology is the arrangement of the elements of a communication network.",networking
+"A star topology is a network topology where each individual piece of a network is attached to a central node.",networking
+"A bus topology is a network setup where each computer and network device are connected to a single cable or backbone.",networking
+"A ring topology is a network configuration where device connections create a circular data path.",networking
+"A mesh topology is a network setup where each computer and network device is interconnected with one another.",networking
+"The TCP/IP model is a more concise framework for internet protocols than the OSI model.",networking
+"A socket is one endpoint of a two-way communication link between two programs running on the network.",networking
+"An API gateway is a central point of control for managing APIs.",networking
+"Content Delivery Network (CDN) is a geographically distributed network of proxy servers and their data centers.",networking
+"Anycast is a network addressing and routing methodology in which datagrams from a single sender are routed to the topologically nearest node in a group of potential receivers.",networking
+"Multicast is group communication where data transmission is addressed to a group of destination computers simultaneously.",networking
+"Unicast is a one-to-one transmission from one point in the network to another point.",networking
+"The network layer is responsible for packet forwarding including routing through intermediate routers.",networking
+"A firewall can be either hardware or software-based.",networking
+"A network interface card (NIC) is a computer hardware component that connects a computer to a computer network.",networking
+"A repeater is a network device that retransmits a received signal with more power.",networking
+"A router operates at the network layer of the OSI model.",networking
+"A switch operates at the data link layer of the OSI model.",networking
+"A hub operates at the physical layer of the OSI model.",networking
+"The default gateway is the node in a computer network that the IP software uses when an IP address does not match any other routes in the routing table.",networking
+"A subnet mask is a 32-bit number that masks an IP address, and divides the IP address into network address and host address.",networking
+"IPv4 uses a 32-bit address scheme allowing for 2^32 addresses.",networking
+"IPv6 uses a 128-bit address scheme, allowing for a much larger number of unique addresses.",networking
+"DHCP (Dynamic Host Configuration Protocol) is a network management protocol used on IP networks for automatically assigning IP addresses.",networking
+"SMTP is the standard protocol for sending emails.",networking
+"POP3 is a protocol for receiving emails.",networking
+"IMAP is another protocol for receiving emails, which allows for more advanced management of the mailbox.",networking
+"Telnet is an application protocol used on the Internet or local area networks to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection.",networking
+"A port number is a way to identify a specific process to which an Internet or other network message is to be forwarded when it arrives at a server.",networking
+"Well-known ports are port numbers from 0 to 1023.",networking
+"Registered ports are port numbers from 1024 to 49151.",networking
+"Dynamic or private ports are from 49152 to 65535.",networking
+"Port 80 is used for HTTP.",networking
+"Port 443 is used for HTTPS.",networking
+"Port 22 is used for SSH.",networking
+"Port 21 is used for FTP.",networking
+"Port 25 is used for SMTP.",networking
+"Port 53 is used for DNS.",networking
+"A network packet contains a header and a payload.",networking
+"The header contains information about the packet, such as the source and destination IP addresses.",networking
+"The payload is the actual data being transmitted.",networking
+"Packet loss occurs when one or more packets of data traveling across a computer network fail to reach their destination.",networking
+"Jitter is the variation in the time between packets arriving, caused by network congestion, timing drift, or route changes.",networking
+"Supervised learning uses labeled data to train models for prediction.",machine-learning
+"Unsupervised learning finds hidden patterns or intrinsic structures in unlabeled data.",machine-learning
+"Reinforcement learning involves an agent that learns to make decisions by taking actions in an environment to maximize a cumulative reward.",machine-learning
+"A neural network is a computational model inspired by the structure and function of biological neural networks.",machine-learning
+"Deep learning is a subset of machine learning based on artificial neural networks with representation learning.",machine-learning
+"A decision tree is a non-parametric supervised learning method used for classification and regression.",machine-learning
+"A random forest is an ensemble learning method that operates by constructing a multitude of decision trees at training time.",machine-learning
+"Support Vector Machines (SVM) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis.",machine-learning
+"K-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters.",machine-learning
+"Principal Component Analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components.",machine-learning
+"Gradient descent is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.",machine-learning
+"Backpropagation is an algorithm used in artificial neural networks to calculate a gradient that is needed in the calculation of the weights to be used in the network.",machine-learning
+"A convolutional neural network (CNN) is a class of deep neural networks, most commonly applied to analyzing visual imagery.",machine-learning
+"A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence.",machine-learning
+"Long Short-Term Memory (LSTM) networks are a type of RNN capable of learning long-term dependencies.",machine-learning
+"A Generative Adversarial Network (GAN) is a class of machine learning frameworks where two neural networks contest with each other in a game.",machine-learning
+"Natural Language Processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language.",machine-learning
+"A transformer model is a deep learning model that adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data.",machine-learning
+"BERT (Bidirectional Encoder Representations from Transformers) is a transformer-based machine learning technique for natural language processing pre-training developed by Google.",machine-learning
+"GPT (Generative Pre-trained Transformer) is a type of large language model that uses the transformer architecture.",machine-learning
+"Overfitting occurs when a machine learning model performs well on training data but not on unseen data.",machine-learning
+"Underfitting occurs when a machine learning model is too simple to capture the underlying structure of the data.",machine-learning
+"Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample.",machine-learning
+"A hyperparameter is a parameter whose value is used to control the learning process.",machine-learning
+"Feature engineering is the process of using domain knowledge to extract features from raw data.",machine-learning
+"A confusion matrix is a table that is often used to describe the performance of a classification model on a set of test data for which the true values are known.",machine-learning
+"Accuracy is a metric that measures the proportion of correct predictions among the total number of cases processed.",machine-learning
+"Precision is a metric that quantifies the number of correct positive predictions made.",machine-learning
+"Recall (or sensitivity) is a metric that quantifies the number of correct positive predictions made out of all positive predictions that could have been made.",machine-learning
+"The F1 score is the harmonic mean of precision and recall.",machine-learning
+"The ROC curve is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied.",machine-learning
+"The AUC (Area Under the ROC Curve) provides an aggregate measure of performance across all possible classification thresholds.",machine-learning
+"Linear regression is a linear approach to modeling the relationship between a scalar response and one or more explanatory variables.",machine-learning
+"Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable.",machine-learning
+"K-Nearest Neighbors (KNN) is a non-parametric method used for classification and regression.",machine-learning
+"Naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes' theorem with strong (naive) independence assumptions between the features.",machine-learning
+"Ensemble methods combine several machine learning techniques into one predictive model to decrease variance (bagging), bias (boosting), or improve predictions (stacking).",machine-learning
+"Bagging involves training a bunch of models in parallel on random subsets of the data.",machine-learning
+"Boosting involves training a sequence of models, where each model learns from the errors of the previous one.",machine-learning
+"Stacking involves training a new model to combine the predictions of several other models.",machine-learning
+"Dimensionality reduction is the process of reducing the number of random variables under consideration by obtaining a set of principal variables.",machine-learning
+"A perceptron is an algorithm for supervised learning of binary classifiers.",machine-learning
+"An activation function in a neural network defines the output of a node given an input or set of inputs.",machine-learning
+"The sigmoid function is a common activation function that squashes values between 0 and 1.",machine-learning
+"The ReLU (Rectified Linear Unit) function is another common activation function that is computationally efficient.",machine-learning
+"A loss function (or cost function) is a function that maps an event or values of one or more variables onto a real number intuitively representing some 'cost' associated with the event.",machine-learning
+"The learning rate is a hyperparameter that controls how much we are adjusting the weights of our network with respect to the loss gradient.",machine-learning
+"A batch in machine learning is a subset of the training set that is used in one iteration of training.",machine-learning
+"An epoch is one complete pass through the entire training dataset.",machine-learning
+"A tensor is a generalization of vectors and matrices to potentially higher dimensions.",machine-learning
+"Transfer learning is a machine learning method where a model developed for a task is reused as the starting point for a model on a second task.",machine-learning
+"Fine-tuning is a form of transfer learning where the weights of a pre-trained model are further trained on a new, smaller dataset.",machine-learning
+"A large language model (LLM) is a language model consisting of a neural network with many parameters, trained on large quantities of text.",machine-learning
+"A chatbot is a software application used to conduct an on-line chat conversation via text or text-to-speech, in lieu of providing direct contact with a live human agent.",machine-learning
+"Computer vision is an interdisciplinary scientific field that deals with how computers can gain high-level understanding from digital images or videos.",machine-learning
+"Object detection is a computer vision task that involves identifying and locating objects in an image or video.",machine-learning
+"Image segmentation is the process of partitioning a digital image into multiple segments (sets of pixels, also known as image objects).",machine-learning
+"Anomaly detection is the identification of rare items, events or observations which raise suspicions by differing significantly from the majority of the data.",machine-learning
+"A recommendation system is a subclass of information filtering system that seeks to predict the 'rating' or 'preference' a user would give to an item.",machine-learning
+"Collaborative filtering is a method of making automatic predictions (filtering) about the interests of a user by collecting preferences or taste information from many users (collaborating).",machine-learning
+"Content-based filtering uses the attributes of an item to recommend other items with similar properties.",machine-learning
+"The bias-variance tradeoff is a central problem in supervised learning.",machine-learning
+"Bias are the simplifying assumptions made by a model to make the target function easier to learn.",machine-learning
+"Variance is the amount that the estimate of the target function will change if different training data was used.",machine-learning
+"Regularization is a technique used to prevent overfitting by adding a penalty term to the loss function.",machine-learning
+"L1 regularization adds a penalty equal to the absolute value of the magnitude of coefficients.",machine-learning
+"L2 regularization adds a penalty equal to the square of the magnitude of coefficients.",machine-learning
+"Dropout is a regularization technique for neural networks that prevents overfitting by randomly setting a fraction of neuron activations to zero during training.",machine-learning
+"Data augmentation is a technique to increase the diversity of your training set by creating modified copies of already existing data.",machine-learning
+"A pipeline in machine learning is a way to codify and automate the workflow it takes to produce a machine learning model.",machine-learning
+"A model is the result of running a machine learning algorithm on data.",machine-learning
+"An algorithm is a procedure or formula for solving a problem.",machine-learning
+"A dataset is a collection of data.",machine-learning
+"Training data is the data used to train a machine learning model.",machine-learning
+"Test data is the data used to evaluate the performance of a machine learning model.",machine-learning
+"Validation data is a sample of data held back from training your model that is used to give an estimate of model skill while tuning model's hyperparameters.",machine-learning
+"A feature is an individual measurable property or characteristic of a phenomenon being observed.",machine-learning
+"A label is the output variable that we are trying to predict.",machine-learning
+"A classifier is a machine learning model that is used to classify data into different categories.",machine-learning
+"A regressor is a machine learning model that is used to predict a continuous value.",machine-learning
+"Clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar to each other than to those in other groups.",machine-learning
+"A dendrogram is a tree diagram frequently used to illustrate the arrangement of the clusters produced by hierarchical clustering.",machine-learning
+"Hierarchical clustering is an algorithm that groups similar objects into groups called clusters.",machine-learning
+"DBSCAN is a density-based clustering algorithm.",machine-learning
+"The curse of dimensionality refers to various phenomena that arise when analyzing and organizing data in high-dimensional spaces that do not occur in low-dimensional settings.",machine-learning
+"A vector is a one-dimensional array of numbers.",machine-learning
+"A matrix is a two-dimensional array of numbers.",machine-learning
+"A scalar is a single number.",machine-learning
+"A SQL query is used to fetch data from a relational database.",database
+"A relational database organizes data into one or more tables of columns and rows.",database
+"A primary key is a specific choice of a minimal set of attributes that uniquely specify a tuple in a relation.",database
+"A foreign key is a key used to link two tables together.",database
+"An index in a database is a data structure that improves the speed of data retrieval operations on a database table.",database
+"A database transaction is a single unit of work.",database
+"ACID properties (Atomicity, Consistency, Isolation, Durability) guarantee that database transactions are processed reliably.",database
+"A NoSQL database provides a mechanism for storage and retrieval of data that is modeled in means other than the tabular relations used in relational databases.",database
+"A document-oriented database is a type of NoSQL database that is designed for storing, retrieving, and managing document-oriented information.",database
+"A key-value store is a simple database that uses a simple key/value method to store data.",database
+"A graph database uses graph structures for semantic queries with nodes, edges, and properties to represent and store data.",database
+"A column-family database stores data in columns rather than in rows.",database
+"MongoDB is a popular document-oriented NoSQL database.",database
+"Redis is a popular in-memory key-value store.",database
+"Cassandra is a distributed column-family database.",database
+"Neo4j is a popular graph database.",database
+"PostgreSQL is a powerful, open-source object-relational database system.",database
+"MySQL is a popular open-source relational database management system.",database
+"SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.",database
+"Microsoft SQL Server is a relational database management system developed by Microsoft.",database
+"Oracle Database is a multi-model database management system produced and marketed by Oracle Corporation.",database
+"Database normalization is the process of organizing the columns and tables of a relational database to minimize data redundancy.",database
+"First Normal Form (1NF) sets the very basic rules for an organized database.",database
+"Second Normal Form (2NF) addresses the concept of removing duplicate data.",database
+"Third Normal Form (3NF) goes one large step further to reduce redundancy and improve data integrity.",database
+"Denormalization is the process of trying to improve the read performance of a database, at the expense of losing some write performance, by adding redundant data or by grouping data.",database
+"A database schema is the structure of a database described in a formal language supported by the database management system (DBMS).",database
+"Data Definition Language (DDL) is a standard for commands that define the different structures in a database.",database
+"Data Manipulation Language (DML) is a computer programming language used for adding, deleting, and modifying data in a database.",database
+"Data Control Language (DCL) is a syntax similar to a computer programming language used to control access to data stored in a database.",database
+"A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.",database
+"A database trigger is a special stored procedure that is run when specific actions occur within a database.",database
+"A database view is a searchable object in a database that is defined by a query.",database
+"Database replication is the process of creating and managing duplicate copies of a database.",database
+"Database sharding is a type of database partitioning that separates a very large database into smaller, faster, more easily managed parts called data shards.",database
+"An Object-Relational Mapping (ORM) is a programming technique for converting data between incompatible type systems using object-oriented programming languages.",database
+"A database connection pool is a cache of database connections maintained so that the connections can be reused when future requests to the database are required.",database
+"A database cursor is a control structure that enables traversal over the records in a database.",database
+"A deadlock is a situation in which two or more transactions are waiting for one another to give up locks.",database
+"A database lock is a mechanism that blocks access to a piece of data in a database when a transaction is using it.",database
+"A query optimizer is a component of a database management system that attempts to determine the most efficient way to execute a given query.",database
+"An execution plan is a sequence of steps used to access data in a SQL relational database management system.",database
+"A full table scan is a scan made on a database where each row of the table is read in a sequential order and the columns that are interested are checked for the condition.",database
+"An index scan is a scan on an index.",database
+"A clustered index determines the physical order of data in a table.",database
+"A non-clustered index has a structure separate from the data rows.",database
+"A composite index is an index on multiple columns.",database
+"A unique index ensures that the indexed columns do not have duplicate values.",database
+"A database administrator (DBA) is a person responsible for the installation, configuration, upgrade, administration, monitoring, maintenance, and security of databases in an organization.",database
+"Data warehousing is the process of collecting and managing data from varied sources to provide meaningful business insights.",database
+"ETL (Extract, Transform, Load) is a data integration process that combines data from multiple data sources into a single, consistent data store which is loaded into a data warehouse or other target system.",database
+"A data mart is a subset of a data warehouse and is usually oriented to a specific business line or team.",database
+"A data lake is a storage repository that holds a vast amount of raw data in its native format until it is needed.",database
+"Big data is a field that treats ways to analyze, systematically extract information from, or otherwise deal with data sets that are too large or complex to be dealt with by traditional data-processing application software.",database
+"Hadoop is an open-source framework that is used to efficiently store and process large datasets.",database
+"Spark is a unified analytics engine for large-scale data processing.",database
+"A database migration is the process of moving data from one or more source databases to one or more target databases.",database
+"A database backup is a copy of data that is taken and stored elsewhere so that it may be used to restore the original after a data loss event.",database
+"A database recovery is the process of restoring a database to a correct or usable state.",database
+"A point-in-time recovery is the process of restoring a database to the state it was in at a specific time.",database
+"A database snapshot is a read-only, static view of a database.",database
+"A materialized view is a database object that contains the results of a query.",database
+"A common table expression (CTE) is a temporary named result set that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement.",database
+"A window function performs a calculation across a set of table rows that are somehow related to the current row.",database
+"A subquery is a query nested inside another query.",database
