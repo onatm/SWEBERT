@@ -7,8 +7,7 @@ from transformers import (
     Trainer,
     pipeline,
 )
-import numpy as np
-import evaluate
+from sklearn.metrics import f1_score
 
 
 MODEL_PATH = "./SWEBERT"
@@ -17,44 +16,54 @@ DATA_PATH = "./data/training_data.csv"
 
 def prepare_data():
     """Prepares the dataset for training and evaluation by loading from CSV."""
-    try:
-        # Load data from CSV file using datasets library
-        # The file path needs to be a dictionary with a key that represents the split name
-        dataset = load_dataset("csv", data_files={"train": DATA_PATH}, delimiter=';')
+    # Load data from CSV file using datasets library
+    # The file path needs to be a dictionary with a key that represents the split name
+    dataset = load_dataset("csv", data_files={"train": DATA_PATH}, delimiter=";")
 
-        # Extract unique labels
-        labels = ["database", "networking", "machine-learning"]
+    # Extract unique labels
+    labels = ["database", "networking", "machine-learning"]
 
-        # Create label mappings
-        label2id = {label: i for i, label in enumerate(labels)}
-        id2label = {i: label for i, label in enumerate(labels)}
+    # Create label mappings
+    label2id = {label: i for i, label in enumerate(labels)}
+    id2label = {i: label for i, label in enumerate(labels)}
 
-        # Create a function to convert string labels to numerical IDs
-        def convert_labels(examples):
-            examples["label"] = [label2id[label] for label in examples["label"]]
-            return examples
+    # Create a function to convert comma-separated string labels to multi-hot vectors
+    def convert_labels(examples):
+        multi_labels = []
+        for lab_str in examples["label"]:
+            label_items = [item.strip() for item in lab_str.split(",") if item.strip()]
+            vector = [1.0 if lbl in label_items else 0.0 for lbl in labels]
+            multi_labels.append(vector)
+        examples["labels"] = multi_labels
+        return examples
 
-        # Apply the conversion to all examples in batch mode
-        dataset = dataset.map(convert_labels, batched=True)
+    # Apply the conversion and drop the original 'label' column
+    dataset = dataset.map(convert_labels, batched=True, remove_columns=["label"])
 
-        # Split dataset into train and test
-        split_dataset = dataset["train"].train_test_split(test_size=0.3, seed=42)
+    # Split dataset into train and test
+    split_dataset = dataset["train"].train_test_split(test_size=0.3, seed=42)  # type: ignore[attr-defined]
 
-        return split_dataset, len(labels), id2label, label2id
-    except Exception as e:
-        print(f"Error loading dataset: {str(e)}")
-        print(
-            f"Make sure the file {DATA_PATH} exists and is a valid CSV with 'text' and 'label' columns."
-        )
-        raise
+    return split_dataset, len(labels), id2label, label2id
 
 
 def compute_metrics(eval_pred):
     """Computes accuracy metric for evaluation."""
-    accuracy = evaluate.load("accuracy")
-    predictions, labels = eval_pred
-    predictions = np.argmax(predictions, axis=1)
-    return accuracy.compute(predictions=predictions, references=labels)
+    # Compute micro F1 using sklearn for multi-label
+    logits, labels = eval_pred
+    # apply sigmoid and threshold
+    probs = torch.sigmoid(torch.from_numpy(logits)).numpy()
+    preds = (probs >= 0.5).astype(int)
+    refs = labels.astype(int)
+    score = f1_score(refs, preds, average="micro")
+    return {"micro_f1": score}
+
+
+# def compute_metrics(eval_pred):
+#     """Computes accuracy metric for evaluation."""
+#     accuracy = evaluate.load("accuracy")
+#     predictions, labels = eval_pred
+#     predictions = np.argmax(predictions, axis=1)
+#     return accuracy.compute(predictions=predictions, references=labels) # type: ignore
 
 
 def train_and_evaluate(dataset, num_labels, id2label, label2id):
@@ -81,10 +90,10 @@ def train_and_evaluate(dataset, num_labels, id2label, label2id):
         id2label=id2label,
         label2id=label2id,
     )
-
     model.config.pad_token_id = tokenizer.pad_token_id
     model.config.bos_token_id = tokenizer.bos_token_id
     model.config.eos_token_id = tokenizer.eos_token_id
+    model.config.problem_type = "multi_label_classification"
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
@@ -117,7 +126,8 @@ def train_and_evaluate(dataset, num_labels, id2label, label2id):
     # --- Step 5: Evaluate the Model ---
     print("\n--- Evaluating Model ---")
     eval_results = trainer.evaluate()
-    print(f"Evaluation Accuracy: {eval_results['eval_accuracy']:.4f}")
+    # Print multi-label F1 instead of accuracy
+    print(f"Evaluation micro F1: {eval_results['eval_micro_f1']:.4f}")
 
     # --- Step 6: Save Model ---
     trainer.save_model(MODEL_PATH)
@@ -127,26 +137,40 @@ def train_and_evaluate(dataset, num_labels, id2label, label2id):
 
 def classify_articles():
     """Uses the fine-tuned model to classify new articles."""
-    classifier = pipeline("text-classification", model=MODEL_PATH)
+    # load tokenizer and use multi-label pipeline
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+    classifier = pipeline(
+        "text-classification",
+        model=MODEL_PATH,
+        tokenizer=tokenizer,
+        function_to_apply="sigmoid",
+        return_all_scores=True,
+    )
 
     print("\n--- Testing Model with New Articles ---")
 
     new_article = (
         "This article discusses TCP/IP and HTTP protocols for fast data transfer."
     )
-    result = classifier(new_article)
+    # classify single article by wrapping in list and taking first result
+    # classify in batch form to get list of lists
+    scores = classifier([new_article])
+    scores = scores[0]  # get predictions for first (and only) input
+    preds = [r for r in scores if isinstance(r, dict) and r["score"] > 0.5]
     print(f"Article: '{new_article}'")
-    print(f"Prediction: {result[0]['label']} (Score: {result[0]['score']:.4f})\n")
+    print(f"Predictions: {preds}\n")
 
     new_article_2 = "The data was stored in a PostgreSQL database."
-    result_2 = classifier(new_article_2)
+    scores2 = classifier([new_article_2])[0]
+    preds2 = [r for r in scores2 if isinstance(r, dict) and r["score"] > 0.5]
     print(f"Article: '{new_article_2}'")
-    print(f"Prediction: {result_2[0]['label']} (Score: {result_2[0]['score']:.4f})\n")
+    print(f"Predictions: {preds2}\n")
 
-    new_article_3 = "A new SQL injection vulnerability was discovered."
-    result_3 = classifier(new_article_3)
+    new_article_3 = "A new SQL injection vulnerability was discovered that uses tcp/ip stack."
+    scores3 = classifier([new_article_3])[0]
+    preds3 = [r for r in scores3 if isinstance(r, dict) and r["score"] > 0.5]
     print(f"Article: '{new_article_3}'")
-    print(f"Prediction: {result_3[0]['label']} (Score: {result_3[0]['score']:.4f})\n")
+    print(f"Predictions: {preds3}\n")
 
 
 def main():
